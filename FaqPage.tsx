@@ -18,31 +18,15 @@ const FaqPage: React.FC = () => {
       a: 'On average, most requests are completed in 24 to 48 hours. Complex projects like multi-page website mockups or long video edits may take longer, but we provide regular updates on progress.'
     },
     {
-      q: 'What determines the speed of delivery?',
-      a: 'Delivery speed is determined by the complexity of the task and the quality of the brief. Clear, concise instructions help our designers work faster and reduce the need for revisions.'
-    },
-    {
       q: 'Are revisions really unlimited?',
       a: 'Yes. We will keep refining the design until you are 100% satisfied with the result. You can request a revision with a single click in the dashboard.'
-    },
-    {
-      q: 'How long do revisions take?',
-      a: 'Revisions are typically prioritized and delivered within 24 hours of the request.'
-    },
-    {
-      q: 'How do I communicate with my designer?',
-      a: 'All communication happens through our custom dashboard. This keeps feedback tied directly to specific requests. Business and Pro plans also include a dedicated Slack channel for real-time collaboration.'
-    },
-    {
-      q: 'Can I have a call with the design team?',
-      a: 'Business and Pro plans include monthly strategy calls with your dedicated Project Manager. For day-to-day requests, text-based communication in the dashboard is the fastest way to get results.'
     },
     {
       q: 'Who owns the final designs?',
       a: 'You do. Once a request is completed and approved, all intellectual property rights for that work belong entirely to you. We just keep the lights on.'
     },
     {
-      q: 'Do I get the source files?',
+      q: 'Do I get the native source files?',
       a: 'Absolutely. We provide native source files (Figma, AI, PSD, etc.) for every completed project as part of your subscription.'
     },
     {
@@ -52,13 +36,25 @@ const FaqPage: React.FC = () => {
     {
       q: 'What happens if I pause my account?',
       a: 'If you pause your account, your remaining days in the billing cycle are saved. You can reactivate whenever you have more design work, and those days will be applied to your next month.'
+    },
+    {
+      q: 'Do you offer video editing?',
+      a: 'Yes! Video editing and motion graphics are included in our Pro plan.'
+    },
+    {
+      q: 'How do I submit design requests?',
+      a: 'All requests are submitted through our proprietary client dashboard. You can upload assets, provide descriptions, and track progress in real-time.'
+    },
+    {
+      q: 'Can I add my team members?',
+      a: 'Yes, you can invite your team members to the dashboard to submit and review requests at no extra cost.'
     }
   ];
 
   return (
     <div className="bg-white">
       {/* 1. Page Header */}
-      <section className="pt-40 pb-32 bg-[#30364F] relative overflow-hidden text-center">
+      <section className="pt-40 pb-32 bg-[#0B0F1A] relative overflow-hidden text-center">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-[#213C51]/10 blur-[120px] rounded-full -mr-32"></div>
         <div className="max-w-[1440px] mx-auto px-6 relative z-10">
           <span className="inline-block px-4 py-2 rounded-full bg-white/5 border border-white/10 text-blue-400 text-xs font-bold uppercase tracking-widest mb-8">
@@ -96,7 +92,7 @@ const FaqPage: React.FC = () => {
                   </span>
                   <span className={`flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center transition-all duration-500 border ${
                     openIndex === idx 
-                      ? 'bg-[#30364F] text-white rotate-180 border-transparent shadow-lg' 
+                      ? 'bg-[#0B0F1A] text-white rotate-180 border-transparent shadow-lg' 
                       : 'bg-gray-50 text-gray-400 border-gray-100'
                   }`}>
                     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -119,7 +115,7 @@ const FaqPage: React.FC = () => {
 
       {/* CTA */}
       <section className="py-32 px-6 bg-gray-50/50">
-        <div className="max-w-[1200px] mx-auto bg-[#30364F] rounded-[4rem] text-center p-16 lg:p-24 shadow-2xl relative overflow-hidden">
+        <div className="max-w-[1200px] mx-auto bg-[#0B0F1A] rounded-[4rem] text-center p-16 lg:p-24 shadow-2xl relative overflow-hidden">
            <div className="absolute top-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl -ml-32 -mt-32"></div>
            <h2 className="text-4xl lg:text-6xl font-black text-white mb-10 leading-tight tracking-tight">
              Still have questions?

@@ -80,14 +80,14 @@ const WhatsIncludedPage: React.FC = () => {
   return (
     <div className="bg-white">
       {/* 1. Page Header */}
-      <section className="pt-40 pb-32 bg-[#30364F] relative overflow-hidden">
+      <section className="pt-40 pb-32 bg-[#0B0F1A] relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-[#213C51]/10 blur-[120px] rounded-full -mr-32"></div>
         <div className="max-w-[1440px] mx-auto px-6 relative z-10 text-center">
           {/* <span className="inline-block px-4 py-2 rounded-full bg-white/5 border border-white/10 text-blue-400 text-xs font-bold uppercase tracking-widest mb-8">
             Platform Capabilities
           </span> */}
           <h1 className="text-5xl lg:text-7xl font-black text-white mb-8 tracking-tight">
-            What’s Included <br className="hidden md:block" /> in Your Subscription
+            What’s Included <br className="hidden md:block" /> with ARC360
           </h1>
           <p className="text-xl lg:text-2xl text-white/50 max-w-3xl mx-auto leading-relaxed">
             From social media posts to complex UI kits, ARC360 is the last design partner you will ever need.
@@ -104,7 +104,7 @@ const WhatsIncludedPage: React.FC = () => {
                 key={idx} 
                 className="bg-gray-50 rounded-[3rem] p-10 lg:p-16 border border-gray-100 hover:bg-white hover:shadow-2xl transition-all duration-500 group"
               >
-                <div className="w-16 h-16 rounded-2xl bg-[#30364F] text-white flex items-center justify-center mb-10 shadow-lg group-hover:scale-110 transition-transform">
+                <div className="w-16 h-16 rounded-2xl bg-[#0B0F1A] text-white flex items-center justify-center mb-10 shadow-lg group-hover:scale-110 transition-transform">
                   {group.icon}
                 </div>
                 <h2 className="text-3xl lg:text-4xl font-black text-[#30364F] mb-10 tracking-tight">
@@ -127,7 +127,7 @@ const WhatsIncludedPage: React.FC = () => {
 
       {/* 4. CTA */}
       <section className="py-32 px-6">
-        <div className="max-w-[1200px] mx-auto bg-[#30364F] rounded-[4rem] text-center p-16 lg:p-24 shadow-2xl relative overflow-hidden">
+        <div className="max-w-[1200px] mx-auto bg-[#0B0F1A] rounded-[4rem] text-center p-16 lg:p-24 shadow-2xl relative overflow-hidden">
            <div className="absolute top-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl -ml-32 -mt-32"></div>
            <h2 className="text-4xl lg:text-6xl font-black text-white mb-10 leading-tight">
              See your brand <br />

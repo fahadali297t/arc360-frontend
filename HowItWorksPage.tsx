@@ -4,13 +4,13 @@ import React from 'react';
 const HowItWorksPage: React.FC = () => {
   const steps = [
     {
-      title: 'Subscribe',
-      desc: 'Pick the plan that fits your needs. Whether you need static graphics, video, or both, we have a flat monthly rate for you. Once you sign up, you get instant access to your design dashboard and your dedicated team.',
+      title: 'Subscribe to a plan',
+      desc: 'Choose the design or video plan that best fits your business needs and scale. Our plans are transparent with no hidden fees.',
       details: [
-        'No hidden setup fees',
+        'Transparent monthly pricing',
+        'No long-term contracts',
         'Pause or cancel anytime',
-        'Secure billing via Stripe',
-        'Add team members for free'
+        'Instant access to dashboard'
       ],
       icon: (
         <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -19,13 +19,13 @@ const HowItWorksPage: React.FC = () => {
       )
     },
     {
-      title: 'Submit Requests',
-      desc: 'Your dashboard is your creative hub. Add as many requests as you like to your queue. You can upload brand assets, mention specific styles, and set priorities. Your Project Manager will review and assign tasks instantly.',
+      title: 'Submit unlimited design requests',
+      desc: 'Use our streamlined dashboard to queue up as many design tasks as you want. Provide details, brand assets, and deadlines for each request.',
       details: [
         'Unlimited request queue',
-        'Integrated brand asset management',
-        'Priority tagging',
-        'Loom video integration for briefs'
+        'Centralized brand assets',
+        'Easy-to-use task manager',
+        'Set priority for each task'
       ],
       icon: (
         <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -34,13 +34,13 @@ const HowItWorksPage: React.FC = () => {
       )
     },
     {
-      title: 'Design & Delivery',
-      desc: 'Our specialized designers get to work. Most requests are delivered in 24-48 hours. You will receive notifications as soon as drafts are ready for your eyes. Everything is crafted specifically for your brand.',
+      title: 'Get designs delivered fast',
+      desc: 'Our expert team works through your queue, delivering initial drafts in 24-48 hours. Receive high-quality, professional designs tailored to your brand.',
       details: [
-        'Consistent 24-48h turnaround',
-        'Specialized experts for every task',
-        'Direct chat with your team',
-        'Native source files included'
+        '24-48 hour turnaround',
+        'Professional design quality',
+        'Tailored to your brief',
+        'Direct dashboard notifications'
       ],
       icon: (
         <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -49,13 +49,13 @@ const HowItWorksPage: React.FC = () => {
       )
     },
     {
-      title: 'Revisions & Ongoing Work',
-      desc: 'Not 100% happy? Request a revision with one click. We will keep refining until it is perfect. Once you approve, we move straight to the next item in your queue. It is a seamless loop of high-quality output.',
+      title: 'Request revisions anytime',
+      desc: 'Not 100% happy? Request as many tweaks as you need until it is perfect. We iterate quickly based on your feedback.',
       details: [
         'Unlimited revisions',
-        'Continuous production loop',
-        'Consistent brand alignment',
-        'Feedback history tracking'
+        'Fast turnaround on tweaks',
+        'No extra costs',
+        'Ensured satisfaction'
       ],
       icon: (
         <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -67,19 +67,18 @@ const HowItWorksPage: React.FC = () => {
 
   return (
     <div className="bg-white">
-      {/* 1. Page Header */}
-      <section className="pt-40 pb-32 bg-[#30364F] relative overflow-hidden">
+      <section className="pt-40 pb-32 bg-[#0B0F1A] relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-[#213C51]/10 blur-[120px] rounded-full -mr-32"></div>
         <div className="max-w-[1440px] mx-auto px-6 relative z-10 text-center">
           <span className="inline-block px-4 py-2 rounded-full bg-white/5 border border-white/10 text-blue-400 text-xs font-bold uppercase tracking-widest mb-8">
             The Process
           </span>
           <h1 className="text-5xl lg:text-7xl font-black text-white mb-8 tracking-tight">
-            How ARC360 Works
+            How It Works
           </h1>
           <p className="text-xl lg:text-2xl text-white/50 max-w-3xl mx-auto leading-relaxed">
-            Simple. Transparent. Subscription-based. <br />
-            We've removed the friction from the creative process so you can focus on growth.
+            A simple, subscription-based approach to professional design. <br />
+            Get started in minutes and scale your creative output instantly.
           </p>
         </div>
       </section>
@@ -157,7 +156,7 @@ const HowItWorksPage: React.FC = () => {
 
       {/* 4. CTA */}
       <section className="py-32 px-6">
-        <div className="max-w-[1200px] mx-auto bg-[#30364F] rounded-[4rem] text-center p-16 lg:p-24 shadow-2xl relative overflow-hidden">
+        <div className="max-w-[1200px] mx-auto bg-[#0B0F1A] rounded-[4rem] text-center p-16 lg:p-24 shadow-2xl relative overflow-hidden">
            <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
            <h2 className="text-4xl lg:text-6xl font-black text-white mb-10 leading-tight">
              Ready to scale <br />

@@ -7,146 +7,126 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ navigate }) => {
   return (
-    <section className="relative pt-32 pb-24 lg:pt-60 lg:pb-48 bg-[#30364F] overflow-hidden">
-      {/* Decorative background elements for a modern feel */}
-      <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-[1200px] h-[1200px] rounded-full bg-white opacity-[0.02] blur-3xl pointer-events-none"></div>
-      <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/4 w-[1000px] h-[1000px] rounded-full bg-[#213C51] opacity-20 blur-3xl pointer-events-none"></div>
+    <section className="relative pt-32 pb-24 lg:pt-60 lg:pb-48 bg-[#0B0F1A] overflow-hidden">
+      {/* Dynamic Mesh Gradients */}
+      <div className="absolute top-[-10%] right-[-10%] w-[60%] h-[60%] rounded-full bg-blue-600/10 blur-[120px] animate-pulse-slow"></div>
+      <div className="absolute bottom-[-10%] left-[-10%] w-[50%] h-[50%] rounded-full bg-purple-600/5 blur-[100px] animate-pulse-delayed"></div>
+      
+      {/* Animated Grid Pattern */}
+      <div className="absolute inset-0 z-0 opacity-[0.03]" 
+           style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
 
       <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-24">
           
           {/* Left Content Column */}
-          <div className="w-full lg:w-[70%] text-center lg:text-left">
-            <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-10 backdrop-blur-md">
-              <span className="flex h-2 w-2 rounded-full bg-blue-400 mr-3 animate-pulse"></span>
-              <span className="text-white/80 text-xs font-bold tracking-widest uppercase">Unlimited Creative Solutions</span>
+          <div className="w-full lg:w-[60%] text-center lg:text-left">
+            <div className="inline-flex items-center px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-10 backdrop-blur-md animate-fade-in">
+              <span className="flex h-2 w-2 rounded-full bg-blue-500 mr-3 animate-ping"></span>
+              <span className="text-white/60 text-[10px] font-black tracking-[0.2em] uppercase">Unlimited Creative Solutions</span>
             </div>
             
-            <h1 className="text-5xl md:text-6xl xl:text-7xl font-extrabold text-white leading-[1.05] mb-10 tracking-tight">
+            <h1 className="text-5xl md:text-7xl xl:text-8xl font-black text-white leading-[1.05] mb-10 tracking-tighter">
               Unlimited Design. <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-white/80 to-white/60">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-white to-purple-400 animate-gradient-x">
                 One Simple Monthly Subscription.
               </span>
             </h1>
             
-            <p className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto lg:mx-0 mb-14 leading-relaxed">
-              ARC360 gives you a dedicated design team for all your creative needs — without hiring, delays, or long-term contracts.
+            <p className="text-lg md:text-xl text-white/40 max-w-2xl mx-auto lg:mx-0 mb-14 font-medium leading-relaxed">
+              ARC360 gives you a dedicated design team to handle all your creative needs — fast, reliable, and without hiring or long-term contracts.
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6">
-              {/* Primary CTA: View Plans */}
               <button 
                 onClick={() => navigate('pricing')}
-                className="w-full sm:w-auto px-12 py-5 bg-[#213C51] border border-white/20 text-white rounded-2xl font-bold text-xl hover:shadow-[0_0_40px_rgba(255,255,255,0.1)] hover:bg-[#2a4d69] transition-all duration-300 transform hover:-translate-y-1 text-center"
+                className="group relative w-full sm:w-auto px-12 py-5 bg-[#213C51] text-white rounded-2xl font-black text-xl overflow-hidden transition-all duration-300 hover:shadow-[0_0_40px_rgba(33,60,81,0.5)] active:scale-95"
               >
-                View Plans
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <span className="relative z-10">View Plans</span>
               </button>
-              {/* Secondary CTA: Book Demo */}
+              
               {/* <button 
                 onClick={() => navigate('contact')}
-                className="w-full sm:w-auto px-12 py-5 bg-transparent border border-white/30 text-white rounded-2xl font-bold text-xl hover:bg-white/5 transition-all duration-300"
+                className="w-full sm:w-auto px-12 py-5 bg-white/5 border border-white/10 text-white rounded-2xl font-black text-xl hover:bg-white/10 transition-all duration-300 backdrop-blur-sm active:scale-95"
               >
                 Book Demo
               </button> */}
             </div>
-            
-            {/* <div className="mt-16 flex items-center justify-center lg:justify-start space-x-8 opacity-40">
-              <span className="text-white text-xs font-bold tracking-widest uppercase">Trusted by 5k+ brands</span>
-              <div className="flex items-center space-x-6 grayscale invert brightness-0">
-                <span className="text-xl font-black italic">Forbes</span>
-                <span className="text-xl font-black italic">Wired</span>
-                <span className="text-xl font-black italic">TechCrunch</span>
-              </div>
-            </div> */}
           </div>
 
-          {/* Right Illustration Column */}
-          <div className="w-full lg:w-[40%] relative">
-            <div className="relative z-20 group">
-              {/* Modern Layered Illustration Frame */}
-              <div className="relative bg-[#213C51] p-2 rounded-[3rem] shadow-[0_60px_120px_-20px_rgba(0,0,0,0.6)] border border-white/10 transition-transform duration-700 group-hover:scale-[1.03]">
-                <div className="overflow-hidden rounded-[2.8rem] aspect-[4/3] relative">
+          {/* Right Visual Column (3D-like Mockup) */}
+          <div className="w-full lg:w-[40%] relative perspective-1000">
+            <div className="relative z-20 animate-float-slow">
+              <div className="relative bg-gradient-to-br from-white/10 to-white/5 p-1 rounded-[3rem] shadow-2xl border border-white/20 backdrop-blur-xl rotate-3 hover:rotate-0 transition-transform duration-700">
+                <div className="overflow-hidden rounded-[2.8rem] aspect-[4/5] relative">
                   <img 
                     src="./image.png" 
-                    alt="Creative Design Platform" 
-                    className="w-full h-full object-cover transition-all duration-700 brightness-75 group-hover:brightness-100"
+                    alt="ARC360 Dashboard Preview" 
+                    className="w-full h-full object-cover brightness-90 contrast-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#30364F]/60 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F1A] via-transparent to-transparent opacity-60"></div>
                   
-                  {/* Internal Mockup Element */}
-                  {/* <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4/5 h-4/5 bg-white/10 backdrop-blur-md rounded-3xl border border-white/20 flex items-center justify-center">
-                    <div className="p-8 text-center">
-                      <div className="w-20 h-20 bg-white rounded-full mx-auto mb-6 flex items-center justify-center shadow-2xl">
-                         <svg className="w-10 h-10 text-[#30364F]" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" />
-                         </svg>
+                  {/* Internal Floating UI Element */}
+                  {/* <div className="absolute bottom-8 left-8 right-8 p-6 bg-white/10 backdrop-blur-2xl rounded-3xl border border-white/20 animate-slide-up">
+                    <div className="flex items-center space-x-4">
+                      <div className="w-12 h-12 rounded-2xl bg-blue-500 flex items-center justify-center text-white font-black">360</div>
+                      <div>
+                        <p className="text-white font-black text-sm uppercase tracking-widest">Active Request</p>
+                        <p className="text-white/60 text-xs">Mobile App Redesign • In Progress</p>
                       </div>
-                      <p className="text-white font-bold text-xl tracking-tight">Watch Production Workflow</p>
                     </div>
                   </div> */}
                 </div>
               </div>
 
-              {/* Floating Illustration Cards */}
-              {/* <div className="absolute -top-10 -right-6 md:-right-12 bg-white p-6 rounded-3xl shadow-[0_30px_70px_rgba(0,0,0,0.25)] animate-bounce-slow z-30 hidden sm:block">
-                <div className="flex items-center space-x-5">
-                  <div className="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center text-[#213C51]">
-                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-xs text-gray-400 font-bold uppercase tracking-widest mb-1">Graphics</p>
-                    <p className="text-lg font-black text-[#30364F]">Landing Page.png</p>
-                  </div>
-                </div>
-              </div> */}
-
-              {/* <div className="absolute -bottom-14 -left-6 md:-left-16 bg-white p-7 rounded-3xl shadow-[0_30px_70px_rgba(0,0,0,0.25)] animate-float z-30 hidden sm:block">
-                <div className="flex items-center space-x-6">
-                  <div className="flex -space-x-4">
-                    <img className="w-12 h-12 rounded-full border-4 border-white shadow-sm" src="https://i.pravatar.cc/150?u=a" alt="User" />
-                    <img className="w-12 h-12 rounded-full border-4 border-white shadow-sm" src="https://i.pravatar.cc/150?u=b" alt="User" />
-                    <div className="w-12 h-12 rounded-full bg-[#213C51] border-4 border-white flex items-center justify-center text-xs text-white font-bold">+5</div>
-                  </div>
-                  <div className="h-12 w-px bg-gray-100"></div>
-                  <div>
-                    <p className="text-xs text-gray-400 font-bold uppercase tracking-widest mb-1">Team Status</p>
-                    <div className="flex items-center">
-                      <span className="w-2.5 h-2.5 rounded-full bg-green-500 mr-2.5"></span>
-                      <p className="text-sm font-bold text-[#30364F]">Ready to design</p>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
+              {/* Decorative Accent Rings */}
+              <div className="absolute -top-10 -left-10 w-32 h-32 bg-blue-500/20 rounded-full blur-2xl animate-pulse"></div>
+              <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-purple-500/20 rounded-full blur-3xl animate-pulse-delayed"></div>
             </div>
-
-            {/* Background Decorative Rings */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[115%] h-[115%] border border-white/5 rounded-full pointer-events-none scale-105"></div>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[130%] h-[130%] border border-white/[0.03] rounded-full pointer-events-none scale-110"></div>
           </div>
-
         </div>
       </div>
       
-      {/* Visual Slant for section transition */}
-      <div className="absolute bottom-0 left-0 right-0 h-24 bg-white transform origin-bottom-right -skew-y-2 translate-y-12"></div>
+      {/* Modern Wave Break */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 overflow-hidden pointer-events-none">
+        <svg className="absolute bottom-0 w-full h-full text-white" viewBox="0 0 1440 120" fill="currentColor" preserveAspectRatio="none">
+          <path d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"></path>
+        </svg>
+      </div>
       
       <style>{`
-        @keyframes bounce-slow {
+        @keyframes pulse-slow {
+          0%, 100% { opacity: 0.3; transform: scale(1); }
+          50% { opacity: 0.6; transform: scale(1.1); }
+        }
+        @keyframes pulse-delayed {
+          0%, 100% { opacity: 0.2; transform: scale(1.1); }
+          50% { opacity: 0.4; transform: scale(1); }
+        }
+        @keyframes gradient-x {
+          0%, 100% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+        }
+        @keyframes float-slow {
           0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-15px); }
+          50% { transform: translateY(-20px); }
         }
-        @keyframes float {
-          0%, 100% { transform: translateY(0) rotate(0deg); }
-          50% { transform: translateY(-20px) rotate(2deg); }
+        @keyframes slide-up {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
         }
-        .animate-bounce-slow {
-          animation: bounce-slow 5s ease-in-out infinite;
+        @keyframes fade-in {
+          from { opacity: 0; }
+          to { opacity: 1; }
         }
-        .animate-float {
-          animation: float 7s ease-in-out infinite;
-        }
+        .animate-pulse-slow { animation: pulse-slow 8s ease-in-out infinite; }
+        .animate-pulse-delayed { animation: pulse-delayed 10s ease-in-out infinite; }
+        .animate-gradient-x { background-size: 200% 200%; animation: gradient-x 15s ease infinite; }
+        .animate-float-slow { animation: float-slow 6s ease-in-out infinite; }
+        .animate-slide-up { animation: slide-up 1s cubic-bezier(0.23, 1, 0.32, 1) forwards; }
+        .animate-fade-in { animation: fade-in 1.5s ease-out forwards; }
+        .perspective-1000 { perspective: 1000px; }
       `}</style>
     </section>
   );

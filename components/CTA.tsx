@@ -4,7 +4,7 @@ import React from 'react';
 const CTA: React.FC = () => {
   return (
     <section className="py-32 px-6">
-      <div className="max-w-[1440px] mx-auto bg-[#30364F] rounded-[4rem] relative overflow-hidden shadow-[0_80px_160px_-40px_rgba(0,0,0,0.5)]">
+      <div className="max-w-[1440px] mx-auto bg-[#0B0F1A] rounded-[4rem] relative overflow-hidden shadow-[0_80px_160px_-40px_rgba(0,0,0,0.5)]">
         {/* Decorative circle */}
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-white/5 rounded-full -mr-60 -mt-60"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-400/10 rounded-full -ml-20 -mb-20 blur-[100px]"></div>

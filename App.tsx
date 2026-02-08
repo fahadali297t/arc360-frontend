@@ -49,7 +49,6 @@ const App: React.FC = () => {
             <PricingTeaser />
             <FAQTeaser />
             <FinalCTA navigate={(path) => setCurrentPath(path)} />
-            <ContactUs />
           </>
         );
     }

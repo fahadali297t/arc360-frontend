@@ -7,7 +7,7 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ navigate }) => {
   return (
-    <footer className="bg-[#30364F] py-16 text-white border-t border-white/5">
+    <footer className="bg-[#0B0F1A] py-16 text-white border-t border-white/5">
       <div className="max-w-[1440px] mx-auto px-6 text-center">
         <div className="mb-8">
           <h3 className="text-xl md:text-2xl font-black tracking-tight mb-2">

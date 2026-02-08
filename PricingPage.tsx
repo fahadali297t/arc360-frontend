@@ -88,7 +88,7 @@ const PricingPage: React.FC = () => {
   return (
     <div className="bg-white">
       {/* 1. Page Header - Matching How It Works Page Style */}
-      <section className="pt-40 pb-32 bg-[#30364F] relative overflow-hidden">
+      <section className="pt-40 pb-32 bg-[#0B0F1A] relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-[#213C51]/10 blur-[120px] rounded-full -mr-32"></div>
         <div className="max-w-[1440px] mx-auto px-6 relative z-10 text-center">
           <span className="inline-block px-4 py-2 rounded-full bg-white/5 border border-white/10 text-blue-400 text-xs font-bold uppercase tracking-widest mb-8">
@@ -98,7 +98,7 @@ const PricingPage: React.FC = () => {
             Simple & Transparent Pricing
           </h1>
           <p className="text-xl lg:text-2xl text-white/50 max-w-3xl mx-auto leading-relaxed mb-16">
-            Choose the creative power that scales with your business.{" "}
+            Choose a plan that fits your business and scale anytime.{" "}
             <br className="hidden md:block" />
             No hidden fees, no surprises.
           </p>
@@ -143,7 +143,7 @@ const PricingPage: React.FC = () => {
               key={idx}
               className={`relative rounded-[3rem] p-10 lg:p-12 transition-all duration-500 flex flex-col h-full border ${
                 plan.highlight
-                  ? "bg-[#30364F] text-white border-transparent shadow-[0_40px_100px_-20px_rgba(48,54,79,0.3)] scale-105 z-10"
+                  ? "bg-[#0B0F1A] text-white border-transparent shadow-[0_40px_100px_-20px_rgba(48,54,79,0.3)] scale-105 z-10"
                   : "bg-white text-[#30364F] border-gray-100 hover:shadow-2xl"
               }`}
             >
@@ -234,7 +234,7 @@ const PricingPage: React.FC = () => {
       </section>
 
       {/* 5. Pricing FAQ (4 items) */}
-      <section className="py-32 bg-[#30364F] text-white">
+      <section className="py-32 bg-[#0B0F1A] text-white">
         <div className="max-w-[1000px] mx-auto px-6">
           <div className="text-center mb-20">
             <h2 className="text-4xl font-black mb-4">Pricing FAQ</h2>

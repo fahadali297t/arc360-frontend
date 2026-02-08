@@ -56,7 +56,10 @@ const PricingTeaser: React.FC = () => {
       <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12">
         <div className="text-center mb-16 md:mb-20">
           {/* <span className="text-[#213C51] font-bold uppercase tracking-widest text-xs mb-4 block">Section 05 — Pricing</span> */}
-          <h2 className="text-4xl lg:text-5xl font-extrabold text-[#30364F] mb-10 tracking-tight">Flexible Plans for Every Stage</h2>
+          <h2 className="text-4xl lg:text-5xl font-extrabold text-[#30364F] mb-10 tracking-tight">Simple, Transparent Pricing</h2>
+          <p className="text-gray-500 max-w-2xl mx-auto text-lg mb-10">
+            Choose a plan that fits your business and scale anytime.
+          </p>
           
           {/* Toggle */}
           <div className="flex items-center justify-center space-x-4">
@@ -79,7 +82,7 @@ const PricingTeaser: React.FC = () => {
               key={idx} 
               className={`relative p-10 rounded-[2.5rem] transition-all duration-500 flex flex-col h-full ${
                 plan.highlight 
-                  ? 'bg-[#30364F] text-white shadow-2xl scale-105 z-10 border-4 border-[#213C51]' 
+                  ? 'bg-[#0B0F1A] text-white shadow-2xl scale-105 z-10 border-4 border-[#213C51]' 
                   : 'bg-gray-50 text-[#30364F] border border-gray-100 hover:bg-white hover:shadow-xl'
               }`}
             >

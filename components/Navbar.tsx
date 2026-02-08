@@ -51,9 +51,10 @@ const Navbar: React.FC<NavbarProps> = ({ navigate, currentPath }) => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <button onClick={(e) => handleNavClick('home', e)} className="flex items-center space-x-2">
-              <span className={`text-2xl font-black tracking-tighter ${getTextColor()}`}>
+              {/* <span className={`text-2xl font-black tracking-tighter ${getTextColor()}`}>
                 ARC360<span className="text-blue-500 rounded-md px-1 ml-0.5">.</span>
-              </span>
+              </span> */}
+              <img src="./logo.png" className="w-44" alt="" srcset="" />
             </button>
           </div>
 
@@ -76,7 +77,10 @@ const Navbar: React.FC<NavbarProps> = ({ navigate, currentPath }) => {
           </div>
 
           <div className="hidden md:flex items-center space-x-6">
-            <button className={`text-sm font-black uppercase tracking-widest ${getTextColor()}`}>
+            <button 
+              onClick={() => window.open('https://dashboard.arc360.co', '_blank')}
+              className={`text-sm font-black uppercase tracking-widest ${getTextColor()}`}
+            >
               Log In
             </button>
             <button 
@@ -120,7 +124,12 @@ const Navbar: React.FC<NavbarProps> = ({ navigate, currentPath }) => {
               </a>
             ))}
             <div className="pt-6 pb-2 border-t border-gray-100 mt-4 space-y-4">
-              <button className="w-full text-center py-4 text-[#30364F] font-black uppercase tracking-widest">Log In</button>
+              <button 
+                onClick={() => window.open('https://dashboard.arc360.co', '_blank')}
+                className="w-full text-center py-4 text-[#30364F] font-black uppercase tracking-widest"
+              >
+                Log In
+              </button>
               <button 
                 onClick={(e) => handleNavClick('contact', e)}
                 className="w-full bg-[#213C51] text-white py-5 rounded-2xl font-black uppercase tracking-widest shadow-xl"

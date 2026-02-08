@@ -18,7 +18,7 @@ const Pricing: React.FC = () => {
       desc: 'Everything from Graphics + Video edits on a monthly flat fee.',
       features: ['Unlimited Requests', 'Unlimited Revisions', 'Unlimited Brands', 'No Contract', '24 Hour Turnaround', '5 Active Requests', 'Video Editing & Motion Graphics'],
       highlight: true,
-      color: 'bg-[#30364F]',
+      color: 'bg-[#0B0F1A]',
       textColor: 'text-white',
       btnColor: 'bg-white',
       btnTextColor: 'text-[#30364F]',

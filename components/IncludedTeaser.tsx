@@ -4,7 +4,7 @@ import React from 'react';
 const IncludedTeaser: React.FC = () => {
   const items = [
     {
-      title: 'Social media creatives',
+      title: 'Social Media Creatives',
       desc: 'Engaging posts, stories, and headers for all your social platforms.',
       icon: (
         <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -13,7 +13,7 @@ const IncludedTeaser: React.FC = () => {
       ),
     },
     {
-      title: 'Website & landing page designs',
+      title: 'Website & Landing Page Designs',
       desc: 'High-converting, pixel-perfect layouts for your web presence.',
       icon: (
         <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -22,7 +22,7 @@ const IncludedTeaser: React.FC = () => {
       ),
     },
     {
-      title: 'Marketing & ad creatives',
+      title: 'Marketing & Ad Creatives',
       desc: 'Static and motion ads that grab attention and drive results.',
       icon: (
         <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -31,7 +31,7 @@ const IncludedTeaser: React.FC = () => {
       ),
     },
     {
-      title: 'Brand & visual assets',
+      title: 'Brand & Visual Assets',
       desc: 'Logos, iconography, and full brand identity kits for consistency.',
       icon: (
         <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -42,7 +42,7 @@ const IncludedTeaser: React.FC = () => {
   ];
 
   return (
-    <section id="included" className="py-24 md:py-32 bg-[#30364F] text-white relative overflow-hidden">
+    <section id="included" className="py-24 md:py-32 bg-[#0B0F1A] text-white relative overflow-hidden">
       {/* Subtle decorative background gradient */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#213C51] rounded-full blur-[120px] opacity-30 -mr-20 -mt-20"></div>
       
@@ -53,8 +53,8 @@ const IncludedTeaser: React.FC = () => {
           <div className="w-full lg:w-1/3 text-center lg:text-left">
             <span className="text-blue-400 font-bold uppercase tracking-widest text-xs mb-4 block">Our Scope</span>
             <h2 className="text-4xl lg:text-6xl font-extrabold mb-8 leading-tight tracking-tight">
-              What's Included <br />
-              <span className="text-white/40">in ARC360</span>
+              What’s Included <br />
+              in Your Subscription
             </h2>
             <p className="text-white/60 text-lg mb-12 leading-relaxed max-w-md mx-auto lg:mx-0">
               Stop hunting for individual freelancers. Get a full-service creative department that handles all your recurring design needs.

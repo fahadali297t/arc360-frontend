@@ -36,7 +36,7 @@ const Workflow: React.FC = () => {
   ];
 
   return (
-    <section id="process" className="py-32 bg-[#30364F] text-white overflow-hidden">
+    <section id="process" className="py-32 bg-[#0B0F1A] text-white overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12 relative">
         {/* Connection Line */}
         <div className="hidden lg:block absolute top-[200px] left-1/4 right-1/4 h-px bg-gradient-to-r from-transparent via-blue-400/40 to-transparent"></div>

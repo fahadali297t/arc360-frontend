@@ -7,20 +7,20 @@ const FAQTeaser: React.FC = () => {
   const faqs = [
     {
       q: 'How does unlimited design work?',
-      a: 'Once subscribed, you can add as many design requests to your queue as you like, and your dedicated designer will work through them one by one. As soon as a request is completed, we move straight to the next one in your queue.',
+      a: 'You can submit as many design requests as you want. We work through them based on your active request limit.',
     },
     {
       q: 'How fast is turnaround?',
-      a: 'On average, you will receive your designs in just 24-48 hours. Simpler tasks like social media posts are often delivered even faster, while more complex projects like multi-page websites might take a few days.',
+      a: 'Most requests are delivered within 24–48 business hours.',
     },
     {
-      q: 'Is there a contract?',
-      a: 'Absolutely not. ARC360 is a month-to-month subscription service. You can pause or cancel your plan at any time with a single click in your dashboard. No hidden fees, no long-term commitments.',
+      q: 'Is there a long-term contract?',
+      a: 'No. ARC360 is a flexible monthly subscription. You can pause or cancel anytime.',
     },
   ];
 
   return (
-    <section id="faq" className="py-24 md:py-32 bg-[#30364F] relative overflow-hidden">
+    <section id="faq" className="py-24 md:py-32 bg-[#0B0F1A] relative overflow-hidden">
       {/* Decorative background blur */}
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-[#213C51] rounded-full blur-[100px] opacity-40 -ml-20 -mb-20"></div>
 

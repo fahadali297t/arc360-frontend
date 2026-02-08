@@ -15,7 +15,7 @@ const HowItWorks: React.FC = () => {
     },
     {
       num: '02',
-      title: 'Submit design requests',
+      title: 'Submit unlimited design requests',
       desc: 'Use our streamlined dashboard to queue up as many design tasks as you want.',
       icon: (
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -50,7 +50,7 @@ const HowItWorks: React.FC = () => {
       <div className="max-w-[1440px] mx-auto px-6 sm:px-8 lg:px-12">
         <div className="text-center mb-20 md:mb-24">
           <span className="text-[#213C51] font-bold uppercase tracking-widest text-xs mb-4 block">Process</span>
-          <h2 className="text-4xl lg:text-5xl font-extrabold text-[#30364F] mb-6">How It Works</h2>
+          <h2 className="text-4xl lg:text-5xl font-extrabold text-[#30364F] mb-6">How ARC360 Works</h2>
           <p className="text-gray-500 max-w-2xl mx-auto text-lg">
             High-quality design doesn't have to be complicated. Our 4-step process ensures you get exactly what you need, when you need it.
           </p>
@@ -59,7 +59,7 @@ const HowItWorks: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-20">
           {steps.map((step, idx) => (
             <div key={idx} className="relative group">
-              <div className="p-8 md:p-10 bg-[#30364F] rounded-[2.5rem] border border-white/5 hover:border-white/10 hover:bg-[#213C51] hover:shadow-[0_40px_80px_-20px_rgba(48,54,79,0.4)] transition-all duration-500 h-full flex flex-col">
+              <div className="p-8 md:p-10 bg-[#0B0F1A] rounded-[2.5rem] border border-white/5 hover:border-white/10 hover:bg-[#213C51] hover:shadow-[0_40px_80px_-20px_rgba(48,54,79,0.4)] transition-all duration-500 h-full flex flex-col">
                 <div className="flex items-center justify-between mb-8">
                   <div className="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center text-white shadow-sm group-hover:bg-white group-hover:text-[#213C51] transition-all duration-300">
                     {step.icon}
